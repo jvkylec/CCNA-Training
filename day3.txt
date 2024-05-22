@@ -226,11 +226,12 @@ TASK9.3: BASIC eBGP FOR ISPS and R1.
 R1 BGP:
 config t
 router bgp 1
- bgp log-neighbor-changes
+bgp log-neighbor-changes
+bgp router-id 1.1.1.1
  neighbor 208.8.8.4 remote-as 45
  neighbor 207.7.7.2 remote-as 2
  neighbor 209.9.9.3 remote-as 3
- network 10.1.1.0 Mask 255.255.255.252
+ network 10.1.1.0 mask 255.255.255.252
  network 207.7.7.0 mask 255.255.255.0
  network 208.8.8.0 mask 255.255.255.0
  network 209.9.9.0 mask 255.255.255.0
